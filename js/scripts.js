@@ -10,4 +10,9 @@ jQuery(document).ready(function() {
   jQuery("img").click(function() {
     alert("This is an image.");
   });
+
+  $(".clickable").click(function() {
+    $("#show-image").toggle();
+    $("#hide-image").toggle();
+  });
 });

@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>HTML Help</title>
@@ -13,9 +14,14 @@
 
       <p>This is a very special page. If you click somewhere, it will tell you what type of HTML element you clicked on.</p>
 
-      <p>Look at this cute walrus!</p>
-      <img src="img/walrus.jpg" alt="A cute walrus.">
-    </div>
+      <div id="hide-image">
+        <p><span class="clickable">Click here</span> to look at a cute walrus!</p>
+      </div>
+      <div id="show-image">
+        <p><img src="img/walrus.jpg" alt="A cute walrus.">
+        <span class="clickable">Click here</span> to hide the picture of a cute walrus.</p>
+      </div>
 
+    </div>
   </body>
 </html>
